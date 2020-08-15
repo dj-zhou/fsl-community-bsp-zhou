@@ -21,8 +21,8 @@
 
   <!-- from freescale (https://github.com/Freescale) -->
   <project remote="freescale" revision="dunfell" name="fsl-community-bsp-base" path="fsl-community-bsp-base">
-	<linkfile dest="README" src="README"/>
-	<linkfile dest="setup-environment" src="setup-environment"/>
+	<!-- <linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/> -->
   </project>
 
   <project remote="freescale" revision="dunfell" name="meta-freescale-3rdparty" path="meta-freescale-3rdparty"/>
