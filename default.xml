@@ -7,6 +7,7 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
+  <remote fetch="https://github.com/dj-zhou" name="zhou"/>
   
   <!-- from yocto (https://git.yoctoproject.org/git) -->
   <project remote="yocto" revision="master" name="poky" path="poky"/>
@@ -29,4 +30,7 @@
   <project remote="freescale" revision="master" name="meta-freescale-distro"   path="meta-freescale-distro"/>
   <project remote="freescale" revision="master" name="Documentation" path="Documentation"/>
 
+  <!-- from zhou (https://github.com/dj-zhou) -->
+  <project remote="zhou" revision="master" name="meta-zhou" path="meta-zhou"/>
+  
 </manifest>
