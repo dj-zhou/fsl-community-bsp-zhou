@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="master"/>
+  <default sync-j="4" revision="dunfell"/>
 
   <!--the following gives the urls and give them names-->
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
@@ -10,25 +10,25 @@
   <remote fetch="https://github.com/dj-zhou" name="zhou"/>
   
   <!-- from yocto (https://git.yoctoproject.org/git) -->
-  <project remote="yocto" revision="master" name="poky" path="poky"/>
+  <project remote="yocto" revision="dunfell" name="poky" path="poky"/>
   <!--  this above gives the repo at: -->
   <!--    https://git.yoctoproject.org/git/poky.git-->
-  <!--  and point the branch as "master" -->
+  <!--  and point the branch as "dunfell" -->
   <!--  and will put to folder [root]/poky/, where [root] folder is where run the "repo commands" -->
-  <project remote="yocto" revision="master" name="meta-freescale" path="meta-freescale"/>
+  <project remote="yocto" revision="dunfell" name="meta-freescale" path="meta-freescale"/>
 
   <!-- from oe (https://github.com/openembedded) -->
-  <project remote="oe" revision="master" name="meta-openembedded" path="meta-openembedded"/>
+  <project remote="oe" revision="dunfell" name="meta-openembedded" path="meta-openembedded"/>
 
   <!-- from freescale (https://github.com/Freescale) -->
-  <project remote="freescale" revision="master" name="fsl-community-bsp-base" path="fsl-community-bsp-base">
+  <project remote="freescale" revision="dunfell" name="fsl-community-bsp-base" path="fsl-community-bsp-base">
 	<!-- <linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/> -->
   </project>
 
-  <project remote="freescale" revision="master" name="meta-freescale-3rdparty" path="meta-freescale-3rdparty"/>
-  <project remote="freescale" revision="master" name="meta-freescale-distro"   path="meta-freescale-distro"/>
-  <project remote="freescale" revision="master" name="Documentation" path="Documentation"/>
+  <project remote="freescale" revision="dunfell" name="meta-freescale-3rdparty" path="meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="dunfell" name="meta-freescale-distro"   path="meta-freescale-distro"/>
+  <project remote="freescale" revision="dunfell" name="Documentation" path="Documentation"/>
 
   <!-- from zhou (https://github.com/dj-zhou) -->
   <project remote="zhou" revision="master" name="meta-zhou" path="meta-zhou"/>
