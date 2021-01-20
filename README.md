@@ -14,9 +14,9 @@ Then, you can do the following (take `dunfell` branch as an example):
 
 ```bash
 cd ~
-mkdir fsl-community-bsp-zhou
-cd fsl-community-bsp-zhou
-repo init -u https://github.com/dj-zhou/fsl-community-bsp-zhou -b dunfell
+mkdir yocto-fsl-community-bsp
+cd yocto-fsl-community-bsp
+repo init -u https://github.com/dj-zhou/yocto-fsl-community-bsp -b dunfell
 repo sync -j4
 ```
 
@@ -27,7 +27,7 @@ For Ubuntu 18.04, you should use `sumo` or `thud`; for Ubuntu 16.04, you should 
 Start to build a simple image `appolo-image`, which is defined in `meta-zhou/recipes-zhou/images`:
 
 ```bash
-cd ~/fsl-community-bsp-zhou
+cd ~/yocto-fsl-community-bsp
 source poky/oe-init-build-env wandboard-zhou
 ```
 
@@ -51,7 +51,7 @@ bitbake appolo-image
 To revise the manifest without pushing changes to this repository, you can:
 
 ```bash
-cd ~/fsl-community-bsp-zhou/.repo/manifests
+cd ~/yocto-fsl-community-bsp/.repo/manifests
 gedit default.xml
 ```
 
